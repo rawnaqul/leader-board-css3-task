@@ -93,6 +93,10 @@ Course Card view styles*/
     color: #ED6B4F;
 }
 
+.fa-solid {
+    margin-left: 3px;
+}
+
 .fa-sun {
     color: #FFC014;
 }
