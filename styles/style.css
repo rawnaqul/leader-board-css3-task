@@ -1,0 +1,177 @@
+/* fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+/* common styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3F1FF;
+}
+
+hr {
+    border-width: 1px solid grey;
+}
+
+h2 {
+    color: #562EFF;
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.container {
+    background-color: #ffffff;
+    width: 870px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+/* top players style */
+.top-players {
+    margin-bottom: 20px;
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+}
+
+.player {
+    display: flex;
+    align-items: center;
+}
+
+.player img {
+    width: 56px;
+    height: 56px;
+}
+
+.player-name {
+    margin-left: 15px;
+}
+
+/* Top Blogs Styles */
+.blog .thumbnile img {
+    width: 177px;
+    height: 117px;
+}
+
+.blog {
+    display: flex;
+}
+
+.blog-info {
+    margin-left: 10px;
+}
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+}
+
+.blog-author a {
+    text-decoration: none;
+    color: #562EFF;
+}
+
+.third {
+    margin-top: 25px;
+}
+
+/*-------------------
+Course Card view styles*/
+
+.course .course-banner img {
+    width: 224px;
+    height: 104px;
+}
+
+.course-author {
+    color: #ED6B4F;
+}
+
+.fa-sun {
+    color: #FFC014;
+}
+
+#grey-sun {
+    color: grey;
+}
+
+.course-details {
+    display: flex;
+    align-items: center;
+}
+
+#rating-number {
+    margin-left: 5px;
+}
+
+.course-duration {
+    font-size: 14px;
+    margin-left: 60px;
+    background-color: rgba(248, 179, 179, 0.877);
+    padding: 4px;
+    border-radius: 15px;
+}
+
+/* .course-duration {
+    justify-content: space-between;
+} */
+.courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.course {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+    background-color: rgba(236, 235, 235, 0.527);
+    border-radius: 6px;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width:688px) {
+    .container {
+        width: 100%;
+    }
+
+    .players {
+        background-color: lightblue;
+        border-radius: 10px;
+        padding: 3px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .player {
+        flex-direction: column;
+    }
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .courses {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+/* tablet devices */
+@media only screen and (min-width: 689px) and (max-width:992px) {
+    .players {
+        background-color: aquamarine;
+        padding: 4px;
+        border-radius: 10px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
